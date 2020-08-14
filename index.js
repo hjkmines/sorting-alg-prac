@@ -46,7 +46,7 @@ function fetchItemsToDisplay(items, sortParameter, sortOrder, itemsPerPage, page
         itemNames.push(collectedItems[i][0])
     }
 
-    return itemNames; 
+    console.log(itemNames)
 
 }
 
