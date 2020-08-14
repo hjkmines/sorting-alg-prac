@@ -3,12 +3,6 @@ let items = [["sdfoiajsd", 4, 3], ["test", 1, 2], ["sam", 3, 6], ["samsdfdytjs",
 
 function fetchItemsToDisplay(items, sortParameter, sortOrder, itemsPerPage, pageNumber) {
     let sortedItems = items 
-
-    function CompareAscByPrice(a, b) {
-        if (a[2] < b[2]) return -1;
-        if (a[2] > b[2]) return 1;
-        return 0;
-    }
     
     function CompareDscByPrice(a, b) {
         if (a[2] < b[2]) return 1;
@@ -50,5 +44,11 @@ function CompareDscByRel(a, b) {
     if (a[1] > b[1]) return -1;
     return 0;
 }
+
+    function CompareAscByPrice(a, b) {
+        if (a[2] < b[2]) return -1;
+        if (a[2] > b[2]) return 1;
+        return 0;
+    }
 
 fetchItemsToDisplay(items, 1, 0, 2, 2)
