@@ -1,9 +1,8 @@
-let items = [["sdfoiajsd", 4, 3], ["test", 1, 2], ["sam", 3, 6], ["samsdfdytjs", 6, 6]]
+let items = [["sdfoiajsd", 4, 3], ["test", 1, 2], ["sam", 3, 6]]
 
 
 function fetchItemsToDisplay(items, sortParameter, sortOrder, itemsPerPage, pageNumber) {
     let sortedItems = items 
-    
     
     if (sortParameter === 1 && sortOrder === 0) {
         sortedItems = sortedItems.sort(CompareAscByRel)
