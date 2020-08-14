@@ -1,5 +1,4 @@
 let items = [["sdfoiajsd", 4, 3], ["test", 1, 2], ["sam", 3, 6], ["samsdfdytjs", 6, 6]]
-let items = [["sdfosdfasdfiajsd", 4, 3], ["testjty", 1, 2], ["satyjm", 3, 6], ["samsdfds", 6, 6]]
 
 
 function fetchItemsToDisplay(items, sortParameter, sortOrder, itemsPerPage, pageNumber) {
