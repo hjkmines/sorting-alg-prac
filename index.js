@@ -14,7 +14,7 @@ function fetchItemsToDisplay(items, sortParameter, sortOrder, itemsPerPage, page
         sortedItems = sortedItems.sort(CompareDscByPrice)
     }
     
-    const collectedItems = sortedItems.slice((pageNumber - 1) * itemsPerPage, pageNumber * itemsPerPage)
+    const collectedItems = sortedItems.slice((pageNumber) * itemsPerPage, pageNumber * itemsPerPage)
     
     const itemNames = []
     
